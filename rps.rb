@@ -32,5 +32,7 @@ loop do
     display_winning_message(computer_choice)
     puts "Computer won!"
   end
-
+  puts "Do you want to play again? (y/n)"
+  break if gets.chomp.downcase != 'y'
 end
+puts "Thanks for playing!"
